@@ -27,6 +27,7 @@ const history=useHistory();
 
 const handleSubmit=(e)=>{
     e.preventDefault();
+    //string .split returns array of strings from , seperated string
     const newMovie={
         ...movie,
         stars:movie.stars.split(",")
